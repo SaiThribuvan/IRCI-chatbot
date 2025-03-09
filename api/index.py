@@ -13,7 +13,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 
 # Load API key securely
-api_key = os.getenv("AI_SECRET")
+api_key = os.getenv("AIzaSyCIa18R0rDADnnmA-4tdWtGkYgUzDXaGZA")
 if not api_key:
     raise ValueError("API key not found. Set it in Vercel environment variables.")
 
